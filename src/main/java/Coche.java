@@ -9,6 +9,4 @@ import lombok.Setter;
 public class Coche {
     private int id;
     private String matricula, marca, modelo, color;
-
-    
 }
