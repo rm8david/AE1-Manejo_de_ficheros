@@ -53,7 +53,7 @@ public class Concesionario {
 
 
     }
-    //Método que va pidiendo todos los datos del coche y crea uno nuevo con el constructor
+    //Método que va pidiendo todos los datos de coche y crea una instancia nueva
     private static void addCoche(){
         System.out.println("Introduzca el id del coche:");
         int id = leer.nextInt();
