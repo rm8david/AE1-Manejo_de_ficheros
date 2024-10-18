@@ -54,6 +54,8 @@ public class Concesionario {
 
             }
         } while (opcion != 6);
+        //cuando el usuario sale del programa (opcion 6), se ejecuta guardarListado, que guardará la lista de coches que
+        //haya en memoria en el archivo .dat
         guardarListado();
 
 
