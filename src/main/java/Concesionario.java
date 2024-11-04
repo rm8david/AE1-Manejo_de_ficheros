@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Concesionario {
     static Scanner leer = new Scanner(System.in);
-    static List<Coche> lista = new ArrayList<Coche>();
+    static List<Coche> lista = new ArrayList<>();
 
 
     public static void main(String[] args) {
