@@ -84,7 +84,7 @@ public class Concesionario {
     private static void addCoche() {
         System.out.println("Introduzca el id del coche:");
         int id = leer.nextInt();
-        leer.nextLine();// avanzar a la siguiente linea porque si no se salta
+        leer.nextLine();// avanzar a la siguiente linea porque si no se la salta
         System.out.println("Introduzca la matricula:");
         String matricula = leer.nextLine();
         System.out.println("Introduzca la marca:");
@@ -93,8 +93,7 @@ public class Concesionario {
         String modelo = leer.nextLine();
         System.out.println("Introduzca el color");
         String color = leer.nextLine();
-        //llamamos al metro de buscar coche por ID, si ya existe decimos que no se puede
-
+        //llamamos al metro de buscar coche por ID,y si ya existe decimos que no se puede
         if (!buscarId(id)) {
             // y despues llamamos a comprobar matricula
             if (!comprobarMatricula(matricula)) {
