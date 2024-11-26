@@ -29,6 +29,7 @@ public class Concesionario {
                 case 2:
                     System.out.println("Introduzca el id a borrar:");
                     int idBorrar = leer.nextInt();
+                    leer.nextLine();
                     if (borrarCoche(idBorrar)) {
                         System.out.println("Coche " + idBorrar + " borrado con exito");
                     } else System.out.println("id no encontrado");
@@ -76,6 +77,7 @@ public class Concesionario {
         } catch (IOException e) {
             System.out.println("Error al exportar a CSV");
         }
+
     }
 
 
@@ -84,7 +86,7 @@ public class Concesionario {
     private static void addCoche() {
         System.out.println("Introduzca el id del coche:");
         int id = leer.nextInt();
-        leer.nextLine();// avanzar a la siguiente linea porque si no se la salta
+        leer.nextLine();// avanzar a la siguiente linea porque si no se salta al siguiente leer
         System.out.println("Introduzca la matricula:");
         String matricula = leer.nextLine();
         System.out.println("Introduzca la marca:");
